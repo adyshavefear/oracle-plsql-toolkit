@@ -84,7 +84,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_atendimento AS
             data_abertura,
             data_limite_sla
         ) VALUES (
-            'PROV_' || SYS_GUID(),
+            'PROV_' || SUBSTR(RAWTOHEX(SYS_GUID()), 1, 20),
             v_id_cidadao,
             v_id_categoria,
             TRIM(p_assunto),

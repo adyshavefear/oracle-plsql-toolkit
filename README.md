@@ -134,6 +134,12 @@ Compatível com **Oracle Live SQL**, **Oracle 19c** e **Oracle Database 23ai Fre
 
 ---
 
+## Teste de regressão
+
+Após a instalação, execute `@tests/test_abrir_protocolo.sql` em um banco de testes.
+O teste abre um protocolo com dados sintéticos e desfaz os dados de negócio.
+Os registros de auditoria autônoma permanecem, por isso não execute em produção.
+
 ## 👨‍💻 Autor
 
 Desenvolvido por **Adones Neto**
